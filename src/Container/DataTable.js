@@ -31,7 +31,7 @@ export const DataTable = ({column, row, onRowClick, selected }) => {
     
 
     return ( tableData.length > 0  &&
-        <Flex p="24px" sx={{
+        <Flex p={5} sx={{
             flexDirection: "column",
             width: "700px",
             border: "2px solid black",
@@ -40,7 +40,14 @@ export const DataTable = ({column, row, onRowClick, selected }) => {
             <Flex sx={{ borderBottom: "1px solid #1b1919" }}>
 
                 {column.map((el => (
-                     <Flex key={el.id} p="16px" sx={{ justifyContent: "center", flex: `0 1 ${el.width}`}}>{el.label}</Flex>
+                     <Flex key={el.id} p="16px" 
+                        sx={{ 
+                            justifyContent: "center", 
+                            flex: `0 1 ${el.width}`,
+                            fontWeight: "bold"
+                            }}>
+                        {el.label}
+                        </Flex>
                 )))}
             </Flex>
             <Flex 
@@ -75,9 +82,9 @@ export const DataTable = ({column, row, onRowClick, selected }) => {
                     />
                     </Label>
                     </Flex>
-                    <Flex p="16px" sx={{ flex: "0 1 80px", alignItems: "center"}}>{el.id}</Flex>
-                    <Flex  p="16px" sx={{ flex: "0 1 80px", alignItems: "center"}}>{el.albumId}</Flex>
-                    <Flex  p="16px" sx={{ flex: "0 1 500px", alignItems: "center"}}>{el.title}</Flex>
+                    <Flex p={4} sx={{ flex: "0 1 80px", alignItems: "center"}}>{el.id}</Flex>
+                    <Flex  p={4} sx={{ flex: "0 1 80px", alignItems: "center"}}>{el.albumId}</Flex>
+                    <Flex  p={4} sx={{ flex: "0 1 500px", alignItems: "center"}}>{el.title}</Flex>
                 </Flex>
             ))}
             </Flex>

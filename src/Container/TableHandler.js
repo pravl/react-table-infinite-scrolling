@@ -19,7 +19,7 @@ useEffect(() => {
    },[])
 
    return (
-   <Flex m="16px" 
+   <Flex m={4} 
    sx={{ width: "100%", height: "100%", justifyContent: "center"}}>
       <DataTable 
          column={[{

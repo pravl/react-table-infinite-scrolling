@@ -4,5 +4,4 @@ import { TableHandler } from "../Container/TableHandler"
 
 export const Shell = () => (
         <TableHandler />
-
 )
