@@ -71,11 +71,11 @@ export const DataTable = ({column, row, onRowClick, selected }) => {
                         position: "absolute",
                         top: 70*(el.id-1)+"px",
                         overflow: "hidden",
+                        backgroundColor: el.id % 2 === 0 ? "oddRow" : "white",
                     }}>
                     <Flex sx={{alignItems: "center"}}>
                     <Label>
                     <Checkbox
-                        sx={{color: "blue"}}
                         onClick={el => onRowClick(el)}
                         checked= {selected[el.id]}
                         id={`${el.id}`}

@@ -65,11 +65,9 @@ const elevation = {
 
 const colors = {
     body: "#FFFFFF",
-    bg: "#edeff3",
-    text: {
-        hint: "#8A94A6"
-    },
-    primary: "blue"
+    bg: "##e0e0e0",
+    primary: "blue",
+    oddRow: "#fafafa"
 }
 
 const weights = {
